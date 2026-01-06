@@ -12,7 +12,7 @@ pipeline {
                     url: 'https://github.com/syedifteqar1/codtech-task4.git'
             }
         }
-
+/*
         stage('SonarQube Scan') {
             steps {
                 sh '''
@@ -35,7 +35,7 @@ pipeline {
                 '''
             }
         }
-
+*/
         stage('Archive Report') {
             steps {
                 archiveArtifacts artifacts: 'zap_report.html'
